@@ -23,13 +23,13 @@ public class MSSVManager {
             choice = Integer.parseInt(sc.nextLine());
 
             switch (choice) {
-                case 1:
+                case 1: //Hiển thị
                     for (int i = 0; i < n; i++) {
                         System.out.println("sinh vien thu " + (i + 1) + ": " + mssv[i]);
                     }
                     break;
 
-                case 2:
+                case 2: //thêm
                     if (n >= 100) break;
                     String newMSSV;
                     boolean exists;
@@ -50,7 +50,7 @@ public class MSSVManager {
                     System.out.print("Thêm sinh viên thành công");
                     break;
 
-                case 3:
+                case 3: //cập nhật
                     int idx = -1;
                     while (true) {
                         System.out.print("Nhập số thứ tự sinh viên cần sửa: ");
@@ -133,3 +133,4 @@ public class MSSVManager {
         } while (choice != 0);
     }
 }
+
